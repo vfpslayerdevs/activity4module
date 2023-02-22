@@ -5,6 +5,27 @@
   <title>Module 4 Solution Starter</title>
   <script>
     var names = []; // DO NOT REMOVE
+    //Do arquivo SpeakHello
+var  nomes  =  [ "Yaakov" ,  "John" ,  "Jen" ,  "Jason" ,  "Paul" ,  "Frank" ,  "Larry" ,  "Paula" ,  "Laura" ,  "Jim" ] ;
+var  alôSpeaker  =  { } ;
+var  byeSpeaker  =  { } ;
+//Do arquivo SpeakGoodbye
+alôSpeaker . falar  =  função ( nome )  {
+  console . log ( "Olá"  +  nome ) ;
+}
+
+tchauSpeaker . falar  =  função ( nome )  {
+  console . log ( "Adeus"  +  nome ) ;
+}
+//Do arquivo Script.JS
+for  ( var  i  =  0 ;  i  <  nomes . comprimento ;  i ++ )  { 
+  var  primeiraletra  =  nomes [ i ] . charAt ( 0 ) . para Minúsculas ( ) ;
+  if  ( primeiraletra  ===  'j' )  {
+    tchauSpeaker . falar ( nomes [ i ] ) ;
+  }  senão  {
+    alôSpeaker . falar ( nomes [ i ] ) ;
+  }
+}
   </script>
   <script src="modulo-4activitie"></script>
 </head>
